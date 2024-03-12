@@ -6,17 +6,24 @@
 
 ## 如何使用
 1. 添加你的.env配置文件
-    cp .env.template .env
-在此处添加你的阿里云OSS配置。
+   
+    ```
+        cp .env.template .env
+    ```
+    
+    在`.env`添加你的阿里云OSS配置。
 
 2. 添加你的筛选规则
-在`index.js`中定义你的筛选规则。
- ```javascript
-     const SEARCH_BY_DATE = '2024-03-12'
-     const SEARCH_BY_FILENAME = '.pdf'
- ```
+    
+    在`index.js`中定义你的筛选规则。
+    
+    ```javascript
+        const SEARCH_BY_DATE = '2024-03-12'
+        const SEARCH_BY_FILENAME = '.pdf'
+     ```
 
-3. 运行脚本并查看控制台输出
- ```
-     npm run start
- ```
+1. 运行脚本并查看控制台输出
+
+    ```
+        npm run start
+    ```
