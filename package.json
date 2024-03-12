@@ -1,0 +1,16 @@
+{
+  "name": "aliyun-oss-file-selector",
+  "version": "1.0.0",
+  "description": "aliyun-oss-file-selector",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ali-oss": "^6.20.0",
+    "dotenv": "^16.4.5"
+  }
+}
