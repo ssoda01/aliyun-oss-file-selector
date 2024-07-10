@@ -5,6 +5,10 @@ const getData = async (nextMaker, selector) => {
     const default_config = {
         'max-keys': 1000,
         'X-OSS-Process': 'meta',
+        // 自定义配置写在这里
+        // 文档：https://github.com/ali-sdk/ali-oss#summary （页内搜索.listV2(query[, options])）
+        // prefix: 'template/',
+        // delimiter: '/'
     }
     if (nextMaker) {
         config = {
@@ -15,7 +19,7 @@ const getData = async (nextMaker, selector) => {
     else {
         config = { ...default_config }
     }
-    await client.list(config).then(e => {
+    await client.listV2(config).then(e => {
         let nextMaker = e.nextMarker;
         e.objects.map(item => {
             let time_str = item.lastModified
